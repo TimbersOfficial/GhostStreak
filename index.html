@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<script type='text/javascript' src="GhostStreak.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ghost Streak</title>
+</head>
+<body>
+    <div class="grid-layout">
+        <section class= "column" id="streak-sidebar">
+            <label  for = "difficulty">Select difficulty:</label>
+            <select name = "difficulty" id = "difficulty">
+                <option value = "amateur" onclick="selectDifficulty(value)">Amateur</option>
+                <option value = "intermediate" onclick="selectDifficulty(value)">Intermediate</option>
+                <option value = "professional" onclick="selectDifficulty(value)">Professional</option>
+                <option value = "nightmare" onclick="selectDifficulty(value)">Nightmare</option>
+                <option value = "insanity" onclick="selectDifficulty(value)">Insanity</option>
+                <option value = "saved" onclick="selectDifficulty(value)">Saved</option>
+                </select>
+            <p id = "sidebar-text"></p>
+        </section>
+        
+        <section class= "column" id="streak-main">
+            <div class="flex-item"><img id = "map0" src="images/tangle_image.png"><img id = "map1" src="images/willow_image.png"><div id = "counter">0</div></div>
+
+            <div class ="flex-item"><p id="test"></p></div>
+
+            <div class ="flex-item">
+                <div onclick="choiceMade(0)" class = "choicebutton" id = "option1">
+                    <p>Click to start</p>
+                </div>
+                <div onclick="choiceMade(1)" class = "choicebutton" id = "option2">
+                    <p>Click to start</p>
+                </div>
+                <div onclick="choiceMade(2)" class = "choicebutton" id = "option3">
+                    <p>Click to start</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type='text/javascript'>initialiseSessionStorage()</script>
+</body>
+</html>

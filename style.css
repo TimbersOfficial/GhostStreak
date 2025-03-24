@@ -1,0 +1,117 @@
+@font-face {
+    font-family: lazy dog;
+    src: url(lazy_dog.ttf);
+}
+
+body {
+    background-image: url("images/corkboard.jpg");
+    background-size: 50%;
+    color: whitesmoke;
+    font-family: lazy dog;
+    font-size: 3ex;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+}
+
+#streak-sidebar {
+    width:220px;
+    position:relative;
+    background:#ffa;
+    overflow:hidden;
+    margin:30px auto;
+    padding:10px;
+    line-height:0.7em;
+    border-radius:0 0 0 30px/45px;
+    box-shadow:
+      inset 0 -40px 40px rgba(0,0,0,0.2),
+      inset 0 25px 10px rgba(0,0,0,0.2),
+      0 5px 6px 5px rgba(0,0,0,0.2);
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+    font-size: 3.2ex;
+    color:#000000;
+    
+}
+
+img {
+    shape-image-threshold: 0.1;
+    filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.8));
+}
+
+
+#streak-main {
+    color: whitesmoke;
+    justify-content: right;
+    grid-area: "b";
+
+}
+
+.flex-item{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#test{
+    font-size: 4ex;
+}
+
+#counter{
+    color: black;
+    display: inline-flex;
+    background-image: url("images/sticky_counter.png");
+    background-size: cover;
+    width: 200px;
+    height: 170px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10ex;
+    margin-top: 0px;
+    padding-top: 20px;
+    position: absolute;
+
+}
+
+#option1{
+    display: flex;
+    color: black;
+    background-image: url("images/tape1.png");
+    background-size: cover;
+    width: 270px;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    font-size: 3.3ex;
+    filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.8));
+    
+}
+#option2{
+    display: flex;
+    color: black;
+    background-image: url("images/tape2.png");
+    background-size: cover;
+    width: 270px;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    font-size: 3.3ex;
+    filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.8));
+    
+}
+#option3{
+    display: flex;
+    color: black;
+    background-image: url("images/tape3.png");
+    background-size: cover;
+    width: 270px;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    font-size: 3.3ex;
+    filter: drop-shadow(8px 8px 15px rgba(0,0,0,0.8));
+}
